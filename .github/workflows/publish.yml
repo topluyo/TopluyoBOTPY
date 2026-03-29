@@ -37,23 +37,16 @@ jobs:
         run: |
           twine upload dist/* --skip-existing
 
-      - name: Upload to GitHub Packages
-        env:
-          TWINE_USERNAME: ${{ github.actor }}
-          TWINE_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          OWNER_LOWER=$(echo "${GITHUB_REPOSITORY_OWNER}" | tr '[:upper:]' '[:lower:]')
-          if OUTPUT=$(twine upload --repository-url "https://upload.pypi.pkg.github.com/${OWNER_LOWER}/" dist/* 2>&1); then
-            echo "$OUTPUT"
-          else
-            STATUS=$?
-            echo "$OUTPUT"
-            if echo "$OUTPUT" | grep -Eiq "already exists|409 Conflict|File already exists"; then
-              echo "Package version already exists in GitHub Packages; continuing."
-              exit 0
-            fi
-            exit $STATUS
-          fi
+      # - name: Upload to GitHub Packages
+      #   env:
+      #     TWINE_USERNAME: ${{ github.actor }}
+      #     TWINE_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+      #   run: |
+      #     python -m twine upload \
+      #       --repository-url "https://upload.pypi.pkg.github.com/" \
+      #       --skip-existing \
+      #       --disable-progress-bar \
+      #       dist/* || echo "GitHub Packages upload skipped or failed (may already exist)"
 
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1
