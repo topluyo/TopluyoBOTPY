@@ -37,6 +37,14 @@ jobs:
         run: |
           twine upload dist/* --skip-existing
 
+      - name: Upload to GitHub Packages
+        env:
+          TWINE_USERNAME: ${{ github.actor }}
+          TWINE_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          OWNER_LOWER=$(echo "${GITHUB_REPOSITORY_OWNER}" | tr '[:upper:]' '[:lower:]')
+          twine upload --repository-url "https://upload.pypi.pkg.github.com/${OWNER_LOWER}/" dist/* --skip-existing
+
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1
         with:
