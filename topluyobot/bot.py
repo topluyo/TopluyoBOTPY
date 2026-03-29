@@ -5,7 +5,7 @@ Topluyo platformu için Python bot kütüphanesi.
 JavaScript (Node.js) versiyonunun Python karşılığıdır.
 
 Kullanım:
-    from topluyo_bot import TopluyoBOT
+    from topluyobot import TopluyoBOT
 
     bot = TopluyoBOT("TOKEN")
 

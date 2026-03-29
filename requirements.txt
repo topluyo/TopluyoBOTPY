@@ -1,4 +1,2 @@
-# topluyobot için gerekli bağımlılıklar
 aiohttp>=3.9.0
 websockets>=12.0
- 
