@@ -41,10 +41,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/TopluyoBOTPY"
-Repository = "https://github.com/yourusername/TopluyoBOTPY.git"
-Issues = "https://github.com/yourusername/TopluyoBOTPY/issues"
-Documentation = "https://github.com/yourusername/TopluyoBOTPY#readme"
+Homepage = "https://github.com/Topluyo/TopluyoBOTPY"
+Repository = "https://github.com/Topluyo/TopluyoBOTPY.git"
+Issues = "https://github.com/Topluyo/TopluyoBOTPY/issues"
+Documentation = "https://github.com/Topluyo/TopluyoBOTPY#readme"
 
 [tool.setuptools]
 packages = ["topluyobot"]

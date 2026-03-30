@@ -10,12 +10,12 @@
 
 ## 📋 İçerik
 
-- [Kurulum](#kurulum)
-- [Hızlı Başlangıç](#hızlı-başlangıç)
-- [Mesaj Türleri](#mesaj-türleri)
-- [API Referansı](#api-referansı)
-- [Örnekler](#örnekler)
-- [Geliştiriciler İçin](#geliştiriciler-için)
+- [Kurulum](#-kurulum)
+- [Hızlı Başlangıç](#-hızlı-başlangıç)
+- [Mesaj Türleri](#-mesaj-türleri)
+- [API Referansı](#-api-referansı)
+- [Örnekler](#-örnekler)
+- [Geliştiriciler İçin](#-geliştiriciler-için)
 
 ---
 
@@ -30,7 +30,7 @@ pip install topluyobot
 ### Geliştirme İçin
 
 ```bash
-git clone https://github.com/yourusername/TopluyoBOTPY.git
+git clone https://github.com/Topluyo/TopluyoBOTPY.git
 cd TopluyoBOTPY
 pip install -e .
 ```
@@ -299,7 +299,7 @@ MIT License – Detaylar için [LICENSE](LICENSE) dosyasını okuyun.
 
 - **Resmi Site:** [topluyo.com](https://topluyo.com)
 - **Email:** info@topluyo.com
-- **Issues:** [GitHub Issues](https://github.com/yourusername/TopluyoBOTPY/issues)
+- **Issues:** [GitHub Issues](https://github.com/Topluyo/TopluyoBOTPY/issues)
 
 ---
 
